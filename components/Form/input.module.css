@@ -1,0 +1,33 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+}
+
+.inputContainer input {
+    padding: 15px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.inputContainer input:invalid[x-focused="true"] ~ span {
+    display: block;
+}
+
+.inputContainer input:invalid[x-focused="true"] {
+    border: 1px solid red;
+}
+
+.inputContainer label {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.inputContainer span {
+    font-size: 0.75rem;
+    padding: 3px;
+    color: red;
+    display: none;
+}
