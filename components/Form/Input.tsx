@@ -5,7 +5,7 @@ import styles from './input.module.css';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     label: string,
-    errorMessage: string,
+    errorMessage?: string,
 }
 
 
@@ -19,7 +19,7 @@ const Input = (props: InputProps) => {
     
     return (
         <div className={styles.inputContainer}>
-            <label htmlFor={id} >{label}</label>
+            <label htmlFor={id}>{label}</label>
             <input 
                 id={id}
                 onChange={onChange}
