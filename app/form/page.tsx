@@ -1,7 +1,6 @@
 'use client'
 
 import Input from '@/components/Form/Input'
-import {v4 as uuidV4} from 'uuid'
 import { useState } from 'react'
 
 import styles from './form.module.css'
